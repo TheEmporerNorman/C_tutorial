@@ -79,7 +79,13 @@
  *   want to pass any paremeters so we leave these brackets empty.
  *
  * The next lines - the function body, are bracketed by '{}' curly brakets. 
- * Within the function body the code you want that function to run is written.
+ * Within the function body the code you want that function to run is written. 
+ * All together they are laid out like this:
+ *
+ * return_type function_name(formal_parameters)
+ * {
+ *	function_body;
+ * }
  *
  * Within our main function below, we execute the printf function. See section
  * 1.2 c). below.
@@ -94,7 +100,7 @@
 
 //Main function:
 
-int main() //<-- This is the function header. return_type function_name(formal_parameters) 
+int main() //<-- This is the function header. 
 { //<-- Open function body.
 
 	printf("Hello World!\n"); //<- Call the printf function.
@@ -104,9 +110,21 @@ int main() //<-- This is the function header. return_type function_name(formal_p
 } //<-- Close function body.
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * Newline syntax and indentation:
+ * 1.2b). Newline syntax and indentation:
+ * 
+ * As part of the compilation process, C compilers will remove the inbuilt new-
+ * line characters automatically inputted by text editors (newline characters
+ * are special symbols usually invisible to the user) and place lines next to
+ * each other.
  *
+ * In order to specify a new line in C, which we will often have to do after a
+ * function for example, we must use the ';' character. Examples of this can be
+ * seen in the body of the main function above/
  *
+ * The main body also demostrates the use of indentation in C. Unlike in python
+ * indentation has not progrematic meaning. It is only used to improve readab-
+ * ility. Different programtic blocks contained within functions, conditions,
+ * loops, and blocks are usually indented for ease of readability.
  *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
@@ -116,5 +134,43 @@ int main() //<-- This is the function header. return_type function_name(formal_p
  * 1.2c) The printf function
  *
  * The printf function allows the user to print a string variable to the 
- * command line. In C strings are 
+ * command line. In C strings are indicated through use of the '"' symbol. 
+ * Single ' can be used for characters but will not work for strings and will
+ * cause a compile error. What out for this as the error will not make it
+ * obvious what you did wrong.
+ *
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * Exercises:
+ *
+ * 1a). Recreate the hello world script on your own text
+ * editor. Try to write the code for yourself, rather than just copying from
+ * this example.
+ *
+ * 1b). Try to compile your hello world script. Does it correctly compile? If
+ * not first have a look at the error the compiler is raising. It will probably
+ * tell you a line number. Have a look back at your script at the indicated
+ * line number and  see if you can spot the error. If you can't work it out,
+ * google is your friend, followed by one of the course instructors.
+ *
+ * 1c). Finally try to run your compiled executable. Does it do what you
+ * expected. Again if not have a look at your script and see if you can work
+ * out why not.
+ *
+ * This four-step process:
+ *
+ * 1). Create (or edit) your script). 
+ * 2). Compile your script using a compiler:
+ * 	- Does it run? If yes proceed to step 4, else proceed to step 3.
+ * 3). Debug your script.
+ * 4). Test your compiled exceutable:
+ * 	- Does it do what you expect, if not return to step 3.
+ *
+ * is something you will find yourself repeating often during the C development
+ * process. Keep it in mind for all future excercises.
+ *
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ *
+ *
