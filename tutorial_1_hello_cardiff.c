@@ -1,5 +1,7 @@
-//Exercise 1 - "Hello Cardiff!":
-//Part of the C workshop run by Michael Norman and Zoltan
+// PXT102/202 C Programming Language Workshop
+// Tutorial 1 - "Hello Cardiff!": Your first C Script
+// 
+// Demonstrators: Zoltan Sztranyovszky and Michael Norman
 
 //Part 1.1: Compiler Preprocessing:
 
@@ -103,7 +105,7 @@
 int main() //<-- This is the function header. 
 { //<-- Open function body.
 
-	printf("Hello World!\n"); //<- Call the printf function.
+	printf("Hello Cardiff!\n"); //<- Call the printf function.
 
 	return 0; //<-- Return 0 if the program executes correctly.
 
