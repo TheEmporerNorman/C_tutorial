@@ -1,7 +1,7 @@
 # PXT102/202 C Programming Language Workshop
 Demonstrators: Zoltan Sztranyovszky and Michael Norman
 
-This guthub repository contains all the material for the "C Programming Language Workshop" workshop.
+This guthub repository contains all the material for the "C Programming Language Workshop".
 
 ## 1  What is C?
 
